@@ -1,0 +1,28 @@
+<ion-modal-view class="filterModal">
+   <ion-header-bar class="bar-dark">
+      <h1 class = "title">Filter</h1>
+      <button class="button button-clear button-primary ion-ios-close-outline closeModalBtn" ng-click="closeFilterModal()"></button>
+   </ion-header-bar>
+
+   <ion-content class="padding">
+      <div collection-repeat="pokemon in pokemonList" class="filterList">
+         <div class="row" ng-if="$index % 3 == 0">
+            <div class="col pokemon">
+               <div ng-show="filteredPokemonList[pokemonList[$index].id]" class="cross-out" ng-click="filterOut(pokemonList[$index].id)"></div>
+               <img class="pokemonImg" ng-src="{{pokemonList[$index].img}}" alt="{{pokemonList[$index].name}}" ng-click="filterOut(pokemonList[$index].id)" ng-if="$index < pokemonList.length">
+               <p>{{pokemonList[$index].name}}</p>
+            </div>
+            <div class="col pokemon">
+               <div ng-show="filteredPokemonList[pokemonList[$index+1].id]" class="cross-out" ng-click="filterOut(pokemonList[$index+1].id)"></div>
+               <img class="pokemonImg" ng-src="{{pokemonList[$index+1].img}}" alt="{{pokemonList[$index+1].name}}" ng-click="filterOut(pokemonList[$index+1].id)" ng-if="$index+1 < pokemonList.length">
+               <p>{{pokemonList[$index+1].name}}</p>
+            </div>
+            <div class="col pokemon">
+               <div ng-show="filteredPokemonList[pokemonList[$index+2].id]" class="cross-out" ng-click="filterOut(pokemonList[$index+2].id)"></div>
+               <img class="pokemonImg" ng-src="{{pokemonList[$index+2].img}}" alt="{{pokemonList[$index+2].name}}" ng-click="filterOut(pokemonList[$index+2].id)" ng-if="$index+2 < pokemonList.length">
+               <p>{{pokemonList[$index+2].name}}</p>
+            </div>
+        </div>
+      </div>
+   </ion-content>
+</ion-modal-view>
