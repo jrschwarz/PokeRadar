@@ -20,6 +20,6 @@ Run App:
 		> ionic run android
 
 Screenshots:
-![Alt text](screenshots/main.PNG =250x "Main View")
-![Alt text](screenshots/filter.PNG =250x "Filter List")
-![Alt text](screenshots/settings.PNG =250x "Settings coming soon")
+<img src="screenshots/main.png" width="200px">
+<img src="screenshots/filter.png" width="200px">
+<img src="screenshots/settings.png" width="200px">
