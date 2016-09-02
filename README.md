@@ -20,6 +20,6 @@ Run App:
 		> ionic run android
 
 Screenshots:
-<img src="screenshots/main.png" width="200px">
-<img src="screenshots/filter.png" width="200px">
-<img src="screenshots/settings.png" width="200px">
+<img src="screenshots/main.PNG" width="200px">
+<img src="screenshots/filter.PNG" width="200px">
+<img src="screenshots/settings.PNG" width="200px">
